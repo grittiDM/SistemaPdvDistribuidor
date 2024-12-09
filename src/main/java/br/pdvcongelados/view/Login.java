@@ -10,17 +10,17 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 
 import br.pdvcongelados.db.DB;
-import br.pdvcongelados.model.dao.UserDao;
 import br.pdvcongelados.model.dao.exceptions.LoginException;
-import br.pdvcongelados.model.entities.User;
+import br.pdvcongelados.model.entities.Usuario;
 
 /**
  *
- * @author lukas
+ * @author Murilo Gritti
  */
+
 public class Login extends javax.swing.JFrame {
 
-    private static User user;
+    private static Usuario user;
     /**
      * Creates new form Login
      */
@@ -32,7 +32,7 @@ public class Login extends javax.swing.JFrame {
         DB.start();
     }
     
-    public static User getLoggedUser() {
+    public static Usuario getLoggedUser() {
         return user;
     }
 
@@ -142,7 +142,7 @@ public class Login extends javax.swing.JFrame {
     private void btn_loginMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_loginMouseReleased
         //verifica se o login e a senha estão corretos 
         try {
-            user = UserDao.verify(txt_user.getText(), new String(txt_password.getPassword()));
+            user = UsuarioDao.verify(txt_user.getText(), new String(txt_password.getPassword()));
             new Home().main(null);
             this.dispose();
         }

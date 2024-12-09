@@ -8,18 +8,15 @@ package br.pdvcongelados.model.entities.util;
 import java.io.Serializable;
 import java.util.Objects;
 
-import org.dizitart.no2.objects.Id;
-
 /**
  *
- * @author silas
- * @param <T>
+ * @author Murilo Gritti
+ * 
  */
 
 public class CodeGenerator implements Serializable {
     private final static long serialVersionUID = 1L;
     
-    @Id
     private String classType;
 
     private Long lastCode;

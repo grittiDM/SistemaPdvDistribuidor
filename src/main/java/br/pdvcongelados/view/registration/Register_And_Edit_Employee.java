@@ -17,14 +17,6 @@ import javax.swing.JOptionPane;
 import com.toedter.calendar.JDateChooser;
 
 import br.pdvcongelados.db.DBException;
-import br.pdvcongelados.model.dao.EmployeeDao;
-import br.pdvcongelados.model.dao.OfficeDao;
-import br.pdvcongelados.model.dao.UserDao;
-import br.pdvcongelados.model.entities.Address;
-import br.pdvcongelados.model.entities.Employee;
-import br.pdvcongelados.model.entities.Office;
-import br.pdvcongelados.model.entities.User;
-import br.pdvcongelados.model.services.CepService;
 import br.pdvcongelados.view.util.ComboBoxRenderer;
 import br.pdvcongelados.view.util.Utils;
 

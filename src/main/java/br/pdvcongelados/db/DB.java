@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author murilo gritti
+ * @author Murilo Gritti
  */
 
 public class DB {

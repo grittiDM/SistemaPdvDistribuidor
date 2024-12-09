@@ -12,14 +12,6 @@ import java.util.List;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
-import br.pdvcongelados.model.dao.BrandDao;
-import br.pdvcongelados.model.dao.CategoryDao;
-import br.pdvcongelados.model.dao.ColorDao;
-import br.pdvcongelados.model.dao.ProductDao;
-import br.pdvcongelados.model.entities.Brand;
-import br.pdvcongelados.model.entities.Category;
-import br.pdvcongelados.model.entities.Color;
-import br.pdvcongelados.model.entities.Product;
 import br.pdvcongelados.view.listeners.DataChangeListener;
 import br.pdvcongelados.view.util.ComboBoxRenderer;
 import br.pdvcongelados.view.util.Utils;

@@ -19,30 +19,15 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
 import br.pdvcongelados.db.DB;
-import br.pdvcongelados.model.dao.BrandDao;
-import br.pdvcongelados.model.dao.CategoryDao;
-import br.pdvcongelados.model.dao.ColorDao;
-import br.pdvcongelados.model.dao.CustomerDao;
-import br.pdvcongelados.model.dao.EmployeeDao;
-import br.pdvcongelados.model.dao.ProductDao;
-import br.pdvcongelados.model.dao.SaleDao;
-import br.pdvcongelados.model.entities.Brand;
-import br.pdvcongelados.model.entities.Category;
-import br.pdvcongelados.model.entities.Color;
-import br.pdvcongelados.model.entities.Customer;
-import br.pdvcongelados.model.entities.Employee;
-import br.pdvcongelados.model.entities.Product;
-import br.pdvcongelados.model.entities.Sale;
-import br.pdvcongelados.model.services.SaleService;
 import br.pdvcongelados.view.listeners.DataChangeListener;
 import br.pdvcongelados.view.registration.Change_Password;
 import br.pdvcongelados.view.registration.Register_And_Edit_Customer;
 import br.pdvcongelados.view.registration.Register_And_Edit_Employee;
-import br.pdvcongelados.view.sale.New_Sale;
-import br.pdvcongelados.view.sale.SaleInfo;
 import br.pdvcongelados.view.stock.Add_Product;
 import br.pdvcongelados.view.stock.Register_And_Edit_Products;
 import br.pdvcongelados.view.util.Utils;
+import br.pdvcongelados.view.venda.New_Sale;
+import br.pdvcongelados.view.venda.SaleInfo;
 
 /**
  *

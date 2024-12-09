@@ -14,7 +14,8 @@ public class App {
     enquanto não há interação com a interface grafica */
     
     public static void main(String[] args) {
-        new Login().main(args);
+        new Login();
+        Login.main(args);
     }
     
 }

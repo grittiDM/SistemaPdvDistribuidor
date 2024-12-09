@@ -10,9 +10,6 @@ import java.text.ParseException;
 
 import javax.swing.JOptionPane;
 
-import br.pdvcongelados.model.dao.ProductDao;
-import br.pdvcongelados.model.entities.Product;
-
 /**
  *
  * @author lukas

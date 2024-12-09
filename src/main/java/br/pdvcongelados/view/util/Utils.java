@@ -20,11 +20,10 @@ import javax.swing.table.DefaultTableModel;
 
 import com.toedter.calendar.JDateChooser;
 
-import br.pdvcongelados.model.entities.Brand;
-import br.pdvcongelados.model.entities.Category;
-import br.pdvcongelados.model.entities.Color;
-import br.pdvcongelados.model.entities.Product;
+import br.pdvcongelados.model.entities.Fornecedor;
+import br.pdvcongelados.model.entities.Produto;
 import br.pdvcongelados.model.entities.TableContract;
+import br.pdvcongelados.model.entities.Tipo;
 
 /**
  *
@@ -135,21 +134,16 @@ public class Utils {
         return sb.toString();
     }
     
-    public static List<Product> productFilters(Collection<Product> product, Category category, Brand brand, Color color, String size) {
-        List<Product> list = new ArrayList<>();
-        list.addAll(product);
+    public static List<Produto> productFilters(Collection<Produto> produto, Tipo tipo, Fornecedor fornecedor) {
+
+        List<Produto> list = new ArrayList<>();
+        list.addAll(produto);
         
-        if (category != null) {
-            list.removeIf(p -> !p.getCategory().equals(category));
+        if (tipo != null) {
+            list.removeIf(p -> !p.getTipo().equals(tipo));
         }
-        if (brand != null) {
-            list.removeIf(p -> !p.getBrand().equals(brand));
-        }
-        if (color != null) {
-            list.removeIf(p -> !p.getColor().equals(color));
-        }
-        if (size != null) {
-            list.removeIf(p -> !p.getSize().equals(size));
+        if (fornecedor != null) {
+            list.removeIf(p -> !p.getFornecedor().equals(fornecedor));
         }
         
         return list;

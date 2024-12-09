@@ -7,8 +7,6 @@ package br.pdvcongelados.view.registration;
 
 import javax.swing.JOptionPane;
 
-import br.pdvcongelados.model.dao.UserDao;
-import br.pdvcongelados.model.entities.User;
 import br.pdvcongelados.view.Login;
 
 /**

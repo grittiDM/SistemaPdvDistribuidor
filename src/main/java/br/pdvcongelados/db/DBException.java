@@ -7,7 +7,7 @@ package br.pdvcongelados.db;
 
 /**
  *
- * @author murilo gritti
+ * @author Murilo Gritti
  */
 
 public class DBException extends RuntimeException {

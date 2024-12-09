@@ -8,8 +8,6 @@ package br.pdvcongelados.view.stock;
 import javax.swing.JOptionPane;
 
 import br.pdvcongelados.db.DBException;
-import br.pdvcongelados.model.dao.ColorDao;
-import br.pdvcongelados.model.entities.Color;
 import br.pdvcongelados.view.util.Utils;
 
 /**

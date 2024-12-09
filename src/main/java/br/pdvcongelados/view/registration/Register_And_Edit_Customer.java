@@ -10,8 +10,6 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 
 import br.pdvcongelados.db.DBException;
-import br.pdvcongelados.model.dao.CustomerDao;
-import br.pdvcongelados.model.entities.Customer;
 import br.pdvcongelados.view.util.Utils;
 
 /**

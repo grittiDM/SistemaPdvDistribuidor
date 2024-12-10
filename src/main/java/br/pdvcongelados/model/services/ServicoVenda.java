@@ -4,8 +4,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.pdvcongelados.model.dao.ProductDao;
-import br.pdvcongelados.model.dao.SaleDao;
+import br.pdvcongelados.model.dao.VendaDao;
 import br.pdvcongelados.model.entities.Produto;
 import br.pdvcongelados.model.entities.Venda;
 
@@ -23,12 +22,12 @@ public class ServicoVenda {
             ProductDao.update(product);
         });
         venda.setMoment(new Date());
-        SaleDao.insert(venda);
+        VendaDao.insert(venda);
     }
     
     public static Double ticketMedio() {
-        Long totalSales = SaleDao.size();
-        Double revenues = SaleDao.revenues(0);
+        Long totalSales = VendaDao.size();
+        Double revenues = VendaDao.revenues(0);
         
         Double result = 0.0;
         result = revenues / totalSales;
@@ -37,11 +36,11 @@ public class ServicoVenda {
     }
     
     public static Double receitaLiquida() {
-        Double revenues = SaleDao.revenues(0);
+        Double revenues = VendaDao.revenues(0);
         Double receitaLiquida = 0.0;
         List<SaleItem> items = new LinkedList<>();
         
-        SaleDao.findAll().forEach(s -> {
+        VendaDao.findAll().forEach(s -> {
             items.addAll(s.getItems());
         });
         

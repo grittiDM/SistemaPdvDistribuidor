@@ -11,6 +11,8 @@ import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+import br.pdvcongelados.model.dao.ClienteDao;
+import br.pdvcongelados.model.dao.ProdutoDao;
 import br.pdvcongelados.model.entities.Cliente;
 import br.pdvcongelados.model.entities.Produto;
 import br.pdvcongelados.model.entities.Venda;
@@ -33,10 +35,7 @@ public class NovaVenda extends javax.swing.JFrame {
     
     private Set<DataChangeListener> listeners = new HashSet<>();
 
-    /**
-     * Creates new form New_Sale
-     */
-    public New_Sale() {
+    public NovaVenda() {
         initComponents();
         btnDeleteProduct.setVisible(false);
     }
@@ -442,7 +441,7 @@ public class NovaVenda extends javax.swing.JFrame {
             txt_product.setText(produto.getDescricao());
             txt_size.setText(produto.getTipo());
             txt_price.setText(String.format("R$ %.2f", produto.getPrecoVenda()));
-            txt_brand.setText(produto.getFornecedor().getName());
+            txt_brand.setText(produto.getFornecedor().getNome());
         } else {
             JOptionPane.showMessageDialog(this, "Código inválido!", "Atenção", JOptionPane.INFORMATION_MESSAGE);
         }

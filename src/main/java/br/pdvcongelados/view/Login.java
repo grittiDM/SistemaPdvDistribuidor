@@ -10,6 +10,7 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 
 import br.pdvcongelados.db.DB;
+import br.pdvcongelados.model.dao.UsuarioDao;
 import br.pdvcongelados.model.dao.exceptions.LoginException;
 import br.pdvcongelados.model.entities.Usuario;
 
